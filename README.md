@@ -1,1 +1,1 @@
-# `curl j.mp/looose | sh`
+# `curl -L j.mp/looose | sh`

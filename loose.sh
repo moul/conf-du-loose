@@ -11,8 +11,6 @@ xset mouse 3 0              2&>/dev/null
 echo "Hacked !"
 EOF
 
-if [[ ! grep .loose ~/.bashrc ]]; then
-  echo "source ~/.loose" >> ~/.bashrc
-fi
+grep .loose ~/.bashrc 2>/dev/null || echo "source ~/.loose" >> ~/.bashrc
 
 #. ~/.loose

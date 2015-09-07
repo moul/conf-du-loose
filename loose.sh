@@ -1,7 +1,6 @@
 #!/bin/sh
 
-
-cat <<EOF >> ~/.loose
+cat <<EOF > ~/.loose
 alias vim=emacs
 alias cd=ls
 alias cat=cd
@@ -12,6 +11,8 @@ xset mouse 3 0              2&>/dev/null
 echo "Hacked !"
 EOF
 
-echo ". ~/.loose" >> ~/.bashrc
+if [ ! grep .loose ~/.bashrc ]; then
+  echo "source ~/.loose" >> ~/.bashrc
+fi
 
 . ~/.loose

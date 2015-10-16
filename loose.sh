@@ -3,7 +3,10 @@
 cat <<EOF > ~/.loose
 alias vim=emacs
 alias cd=ls
-alias cat=cd
+alias cat=rev
+alias cp=yes
+alias mv=yes
+alias su=yes
 
 google-chrome rickroll.fr     2&>/dev/null
 {if whereis localctl; then

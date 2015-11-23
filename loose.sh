@@ -11,7 +11,7 @@ alias su=yes
 alias scp="echo JE SUIS UN GLAND"
 
 google-chrome rickroll.fr     2&>/dev/null
-{if whereis localctl; then
+{if hash localctl; then
     setxkbmap $(localectl list-keymaps | shuf -n 1)
 else
     setxkbmap dvorak

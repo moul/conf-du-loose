@@ -1,0 +1,4 @@
+language: bash
+service: docker
+sudo: required
+script: make test

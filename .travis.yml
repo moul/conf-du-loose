@@ -1,4 +1,4 @@
 language: bash
-service: docker
+services: docker
 sudo: required
 script: make test
